@@ -1,6 +1,5 @@
 def matrix_product(X, Y):  
     m=[[0 for _ in range(len(Y[0]))] for _ in range(len(X))]
-    r = 0
     for i in range(len(X)):
         for j in range(len(Y[0])):
             for k in range(len(X[0])):

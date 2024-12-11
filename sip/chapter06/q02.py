@@ -1,13 +1,9 @@
-def matrix_sum(X,Y):
-    m=[[0 for _ in range(len(X[0]))] for _ in range(len(X))]
-    for i in range(len(X)):
-        for j in range(len(X[0])):
-            m[i][j] = X[i][j] + Y[i][j]
-    return m
+import numpy as np
 
-X = [[1, 2, 3],
-    [4, 5, 6]]
-Y = [[8, 1, 2],
-    [-1, 0, -2]]
-answer = matrix_sum(X, Y)
-print(answer)
+A = np.array([[2,-1],[1,1]])
+x = np.array([1,1])
+b = np.array([1,2])
+
+Ax = np.matmul(A,x)
+ans = np.subtract(Ax,b)
+print(ans)
